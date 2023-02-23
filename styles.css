@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: skyblue;
+}
+.indicators {
+    display: flex;
+    justify-content: space-between;
+}
+.score-box {
+    width: 100px;
+    height: fit-content;
+    background-color: yellow;
+    box-shadow: 0 4px 0 blue;
+    text-align: center;
+    margin-bottom: 2vh;
+    padding-top: 1vh;
+}
+#trials {
+    display: none;
+}
+.game-box {
+    display: block;
+    margin: 10px auto;
+    width: 700px;
+}
+.upper-box {
+    width: 700px;
+    background-color: white;
+    height: 400px;
+    box-shadow: 5px 0 5px green;
+    position: relative;
+    overflow: hidden;
+    cursor: url("images/sword.png"), auto;
+}
+.btn-holder {
+    width: 100%;
+}
+.Catch {
+    width: 60%;
+    height: 5vh;
+    margin: 10px 20%;
+    background-color: purple;
+    box-shadow: 0 4px 4px black;
+    border: none;
+    color: white;
+}
+.start {
+    width: 40%;
+    background-color: white;
+    border: none;
+    height: 5vh;
+    margin: 5px 30%;
+}
+.game-over {
+    width: 60%;
+    height: 30vh;
+    background: linear-gradient(crimson, orange);
+    position: absolute;
+    bottom: 36%;
+    left: 20%;
+    text-align: center;
+    padding-top: 10vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    display: none;
+    color: white;
+    text-transform: uppercase;
+}
+#fruits {
+    display: none;
+    position: absolute;
+}
