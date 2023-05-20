@@ -50,6 +50,7 @@ function startPlay(){
 $("#fruits").mouseover(function(){
     score++;
     $("#score").html(score);
+    document.getElementById("sound").currentTime = 0;
     document.getElementById("sound").play();
     clearInterval(timeId);
     $("#fruits").hide("explode", 500);
