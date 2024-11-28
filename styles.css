@@ -22,10 +22,10 @@ body {
 .game-box {
     display: block;
     margin: 10px auto;
-    width: 700px;
+    width: 80vw;
 }
 .upper-box {
-    width: 700px;
+    width: 80vw;
     background-color: white;
     height: 400px;
     box-shadow: 5px 0 5px green;
@@ -71,4 +71,17 @@ body {
 #fruits {
     display: none;
     position: absolute;
+}
+
+@media screen and (max-width: 768px) {
+    .upper-box {
+        width: 100vw;
+        height: 60vh;
+        background-color: red;
+        display: block;
+        margin: 0 auto;
+    }
+    .game-box {
+        width: 100vw;
+    }
 }

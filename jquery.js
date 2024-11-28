@@ -24,7 +24,7 @@ $(function(){
 function startPlay(){
     $("#fruits").show();
     chooseFruit();
-    $("#fruits").css({'left': Math.floor(Math.random()*600), 'top': -50});
+    $("#fruits").css({'left': Math.floor(Math.random()*$(".upper-box").width()-50), 'top': -50});
     step = Math.floor(Math.random()*5)+1;
     timeId= setInterval(function(){
         $("#fruits").css({'top': $("#fruits").position().top + step});
@@ -32,7 +32,7 @@ function startPlay(){
             if(trialsLeft>1){
                 $("#fruits").show();
                 chooseFruit();
-                $("#fruits").css({'left': Math.floor(Math.random()*600), 'top': -50});
+                $("#fruits").css({'left': Math.floor(Math.random()*$(".upper-box").width()-50), 'top': -50});
                 step = Math.floor(Math.random()*5)+1;
                 trialsLeft --;
                 addHearts(trialsLeft);
